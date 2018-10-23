@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateController">
+   <children>
+      <Pane layoutX="9.0" layoutY="5.0" prefHeight="527.0" prefWidth="571.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <JFXButton fx:id="btnCreate" buttonType="RAISED" layoutX="167.0" layoutY="429.0" onMouseClicked="#handleButtonAction" prefHeight="27.0" prefWidth="230.0" style="-fx-background-color: #51d680;" text="Create Account" textFill="#f8f5f5">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="168.0" layoutY="365.0" onMouseClicked="#handleButtonAction" prefHeight="27.0" prefWidth="230.0" style="-fx-background-color: #fbfbfb;" text="Cancel">
+               <font>
+                  <Font size="12.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="txtfirstName" focusColor="#51d680" layoutX="108.0" layoutY="113.0" prefHeight="27.0" prefWidth="151.0" promptText="Firstname" />
+            <JFXTextField fx:id="txtlastName" focusColor="#51d680" layoutX="303.0" layoutY="113.0" promptText="Lastname" />
+            <JFXTextField fx:id="txtemail" focusColor="#51d680" layoutX="109.0" layoutY="158.0" prefHeight="27.0" prefWidth="346.0" promptText="Email" />
+            <JFXTextField fx:id="txtUsername" focusColor="#51d680" layoutX="110.0" layoutY="204.0" prefHeight="27.0" prefWidth="346.0" promptText="Username" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="#51d680" layoutX="109.0" layoutY="250.0" prefHeight="27.0" prefWidth="346.0" promptText="Password" />
+            <JFXPasswordField fx:id="txtRepass" focusColor="#51d680" layoutX="110.0" layoutY="304.0" prefHeight="27.0" prefWidth="346.0" promptText="Re-enter Password" />
+            <Separator layoutX="31.0" layoutY="58.0" prefHeight="13.0" prefWidth="21.0" />
+            <Label layoutX="31.0" layoutY="29.0" text="Sign up">
+               <font>
+                  <Font name="Roboto Black" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
